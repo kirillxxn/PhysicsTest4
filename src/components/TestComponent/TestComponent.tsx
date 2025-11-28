@@ -410,7 +410,7 @@ const TestComponent: React.FC = () => {
 				<h1>
 					{testState.mode === 'mistakes'
 						? 'Работа над ошибками'
-						: 'Тест по физике'}
+						: 'Тест по физике 4'}
 					{testState.mode === 'mistakes' && (
 						<span className={styles.mistakesBadge}>
 							{testState.mistakeQuestions.length} вопросов
