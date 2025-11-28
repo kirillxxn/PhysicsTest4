@@ -403,7 +403,6 @@ const TestComponent: React.FC = () => {
 		testState.mode === 'mistakes'
 			? testState.mistakeQuestions[testState.currentQuestion] + 1
 			: testState.currentQuestion + 1
-
 	return (
 		<div className={styles.testContainer} ref={testContainerRef}>
 			<div className={styles.header}>
@@ -440,7 +439,6 @@ const TestComponent: React.FC = () => {
 					}}
 				></div>
 			</div>
-
 			<Question
 				question={{
 					...currentQuestionData,
@@ -481,7 +479,6 @@ const TestComponent: React.FC = () => {
 						: 'Далее →'}
 				</button>
 			</div>
-
 			{testState.mode === 'mistakes' && (
 				<div className={styles.mistakesInfo}>
 					<strong>Режим работы над ошибками:</strong>
